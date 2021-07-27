@@ -37,8 +37,8 @@
                 VALUES (:podcast_name, :podcast_description, :podcast_url);";
     $prepare = $connexion->prepare($requete);
     $prepare->execute(array(
-      ":podcast_name" => "L'affaire Benalla",
-      ":podcast_description" => "Retrouvez 4 épisodes de l'affaire Benalla",
+      ":podcast_name" => "L'affaire italienne",
+      ":podcast_description" => "Retrouvez 4 épisodes de l'affaire italienne",
       ":podcast_url" => "https://cdn.radiofrance-podcast.net/podcast2020/11/942a9fa8",
     ));
     $resultat = $prepare->rowCount(); // rowCount() nécessite PDO::MYSQL_ATTR_FOUND_ROWS => true
